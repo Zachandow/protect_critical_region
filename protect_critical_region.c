@@ -129,6 +129,7 @@ int main(int argc, const char* argv[]) {
 
 
 
+
 //========================================================================
 // ACTUAL OUTPUT FROM PROTECT-CRITICAL_REGION.C
 //========================================================================
@@ -178,59 +179,7 @@ int main(int argc, const char* argv[]) {
 // into non-critical(T0)
 //                         out of CRITICAL(T1)
 //                         into non-critical(T1)
-
 // all 3 threads joined
-
-// End of program
-// osc@ubuntu:~/final-src-osc10e/ch4$ ./protect_critical_region
-//                                                 CRITICAL(T2)
-//                         CRITICAL(T1)
-// CRITICAL(T0)
-//                                                 out of CRITICAL(T2)
-//                                                 into non-critical(T2)
-//                                                 CRITICAL(T2)
-//                         out of CRITICAL(T1)
-//                         into non-critical(T1)
-//                         CRITICAL(T1)
-// out of CRITICAL(T0)
-// into non-critical(T0)
-// CRITICAL(T0)
-//                                                 out of CRITICAL(T2)
-//                                                 into non-critical(T2)
-//                                                 CRITICAL(T2)
-//                         out of CRITICAL(T1)
-//                         into non-critical(T1)
-//                         CRITICAL(T1)
-// out of CRITICAL(T0)
-// into non-critical(T0)
-// CRITICAL(T0)
-//                                                 out of CRITICAL(T2)
-//                                                 into non-critical(T2)
-//                                                 CRITICAL(T2)
-//                         out of CRITICAL(T1)
-//                         into non-critical(T1)
-//                         CRITICAL(T1)
-// out of CRITICAL(T0)
-// into non-critical(T0)
-// CRITICAL(T0)
-//                                                 out of CRITICAL(T2)
-//                                                 into non-critical(T2)
-//                                                 CRITICAL(T2)
-//                         out of CRITICAL(T1)
-//                         into non-critical(T1)
-//                         CRITICAL(T1)
-// out of CRITICAL(T0)
-// into non-critical(T0)
-// CRITICAL(T0)
-//                                                 out of CRITICAL(T2)
-//                                                 into non-critical(T2)
-// out of CRITICAL(T0)
-// into non-critical(T0)
-//                         out of CRITICAL(T1)
-//                         into non-critical(T1)
-//
-// all 3 threads joined
-//
 // End of program
 //  */
 //========================================================================
